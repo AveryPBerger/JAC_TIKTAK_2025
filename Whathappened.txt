@@ -1,0 +1,14 @@
+Sept 30th 
+    -Setup GitHub Repo 
+    -Divided up pages as follows 
+        Home - Everyone
+        Kiosk - Theo 
+        Robot - Vincent 
+        Video - Chloe 
+        Tutorial - Chloe/Avery
+        About Us! - David 
+        TimeLine - Avery
+    -Decided on the following deadline(s)
+        Oct 14: Finish the template design 
+        Oct 28th/Nov 4th finish solo design 
+        
