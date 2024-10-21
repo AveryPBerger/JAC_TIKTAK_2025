@@ -33,9 +33,12 @@ html,body{
     background-color: #964B00;
     width: 3%;
 }
+#home{
+    transform: rotate(45deg)
+}
 #bookMarks nav{
     display: flex;
-    /* gap: 5%; */
+    /* */
     height: 6vh;
     width: 60vw;
     margin-top: 5%;
@@ -44,9 +47,15 @@ html,body{
     justify-content: space-between;
 }
 #bookMarks #leftBookmarks{
+    gap: 5%;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 #bookMarks #rightBookmarks{
+    gap: 5%;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 header nav a{
