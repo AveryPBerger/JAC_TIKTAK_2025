@@ -1,0 +1,56 @@
+html,body{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#fullBook{
+    position: absolute;
+    top: 2%;
+    left: 15%;
+}
+#book{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FADFAD;
+    height: 75vh;
+    width: 63vw;
+    margin-left: 5%;
+    /* margin-right: 10vh; */
+    gap: 10%;
+    justify-content: space-between;
+    /*background-image:url(../Assets/Images/bookBackground.webp)
+    Background image needs to be replaced due to copyright laws (ish)*/
+}
+#leftPage{
+    width: 22%;
+    padding-left: 1%;
+}
+#rightPage{
+    width: 22%;
+}
+#middle{
+    background-color: #964B00;
+    width: 3%;
+}
+#bookMarks nav{
+    display: flex;
+    /* gap: 5%; */
+    height: 6vh;
+    width: 60vw;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-bottom: -.5%;
+    justify-content: space-between;
+}
+#bookMarks #leftBookmarks{
+
+}
+#bookMarks #rightBookmarks{
+
+}
+header nav a{
+    height: 90%;
+    background-color: gold;
+    /*background-image: url(../Assets/Images/bookBackground.webp);*/
+}
