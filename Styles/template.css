@@ -1,15 +1,22 @@
-html,body{
-    position:absolute;
+html,
+body {
+    position: absolute;
     height: 100%;
     width: 100%;
     margin: 0;
 }
-#fullBook{
+
+#fullBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
     top: 2%;
     left: 15%;
 }
-#book{
+
+#book {
     display: flex;
     flex-wrap: wrap;
     background-color: #FADFAD;
@@ -22,21 +29,29 @@ html,body{
     /*background-image:url(../Assets/Images/bookBackground.webp)
     Background image needs to be replaced due to copyright laws (ish)*/
 }
-#leftPage{
+
+#leftPage {
     width: 22%;
     padding-left: 1%;
 }
-#rightPage{
+
+#rightPage {
     width: 22%;
 }
-#middle{
+
+#middle {
     background-color: #964B00;
     width: 3%;
 }
-#home{
-    transform: rotate(45deg)
+
+#homeBookmark {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    transform: rotate(270deg);
 }
-#bookMarks nav{
+
+#bookMarks nav {
     display: flex;
     /* */
     height: 6vh;
@@ -46,19 +61,19 @@ html,body{
     margin-bottom: -.5%;
     justify-content: space-between;
 }
-#bookMarks #leftBookmarks{
+
+#homeBookmark,
+#leftBookmarks,
+#rightBookmarks {
     gap: 5%;
     display: flex;
     justify-content: space-evenly;
 
 }
-#bookMarks #rightBookmarks{
-    gap: 5%;
-    display: flex;
-    justify-content: space-evenly;
 
-}
-header nav a{
+#homeBookmark a,
+#leftBookmarks a,
+#rightBookmarks a {
     height: 90%;
     background-color: gold;
     /*background-image: url(../Assets/Images/bookBackground.webp);*/
