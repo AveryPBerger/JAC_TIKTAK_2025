@@ -5,31 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
-
-    <!--Stylesheets-->
     <link rel="stylesheet" href="../Styles/globalStyle.css" />
     <link rel="stylesheet" href="../Styles/template.css" />
 </head>
-
 <!--
 NOTES:
 When using this template please keep a few things in mind, if you need to change an ID or a class name for whatever reason
 push to github first and let Avery know. 
-The html section will need to be copy pasted for every page but the css will 
+The html section will need to be copy pasted for every page but the css wil 
 be shared
 The images are templates and will need to be changed 
 elements will need to be added according to what you need for the specific page
 -->
 
 <body>
-    <div id="fullBook">
-        <div id="homeBookmark">
+    <section id="fullBook"> <!--Wraps the entire book in a container so we can play with the position absolutes-->
+
+        <section id="homeBookmark">
             <a id="home" href="../index.html">Home</a>
-        </div>
-        <div id="restOfBook">
-            <div id="bookmarks">
-                <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
-                <nav>
+        </section>
+
+        <section id="restOfBook">
+            <header id="bookMarks">
+                <nav> <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
                     <section id="leftBookmarks">
                         <a href="./kiosk.html">Kiosk</a>
                         <a href="./robot.html">Robot</a>
@@ -44,7 +42,7 @@ elements will need to be added according to what you need for the specific page
                         <a href="./aboutus.html">About Us</a>
                     </section>
                 </nav>
-            </div>
+            </header>
             <section id="book">
                 <section id="leftPage">
                     <header>
@@ -56,7 +54,7 @@ elements will need to be added according to what you need for the specific page
                     <img src="../Assets/Images/download.jpg">
                 </section>
                 <section id="middle">
-                    <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
+                    <!--Leave this relativly blank, it is used to create the space in the middle of the pages-->
                 </section>
                 <section id="rightPage">
                     <section class="content">
@@ -64,9 +62,8 @@ elements will need to be added according to what you need for the specific page
                     </section>
                 </section>
             </section>
-        </div>
-    </div>
-
+        </section>
+    </section>
 </body>
 
 </html>
