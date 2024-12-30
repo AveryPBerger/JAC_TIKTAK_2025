@@ -1,0 +1,43 @@
+/*======================Temp styling --remove==========================*/
+
+img{
+    height: 3em;
+    width: 3em;
+}
+
+.robot-intro-outer-div,
+.first-entry,
+.second-entry,
+.third-entry,
+.robot-plan,
+.robot-intro,
+.rules{
+
+    height: 100%;
+    width: 100%;
+
+    border: 0.15em solid darkorchid;
+}
+
+/*=====================================================================*/
+
+/*===Left side===*/
+
+#leftPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 25%;
+}
+
+/*===Right side===*/
+

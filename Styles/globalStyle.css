@@ -1,2 +1,22 @@
-/*Webfont*/
-@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+/*===Webfont===*/
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap'); /*Change?*/
+
+/*===General===*/
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+/*===Flexbox===*/
+
+/*Centered flexbox*/
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
