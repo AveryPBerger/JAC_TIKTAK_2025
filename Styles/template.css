@@ -1,24 +1,3 @@
-/*-----------------------------------------------------------------General/Global--------------------------------------------------------*/
-body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-}
-
-/*Default flexbox*/
-body,
-#restOfBook,
-#book,
-#middle,
-#homeBookmark,
-#bookmarks nav,
-#leftBookmarks,
-#rightBookmarks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /*----------------------------------------------------------------------Book-------------------------------------------------------------*/
 
 #fullBook {
@@ -26,6 +5,7 @@ body,
     grid-template-columns: 0.05fr 0.95fr;
 
     width: 50vw;
+    height: 75vh;
 }
 
 #restOfBook {

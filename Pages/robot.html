@@ -5,68 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robot</title>
-    <link rel="stylesheet" href="../Styles/globalStyle.css" />
-    <link rel="stylesheet" href="../Styles/template.css" />
 
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../Styles/globalStyle.css">
+    <link rel="stylesheet" href="../Styles/template.css">
+    <link rel="stylesheet" href="./../Styles/robot.css">
 </head>
 
-<!--
-NOTES:
-When using this template please keep a few things in mind, if you need to change an ID or a class name for whatever reason
-push to github first and let Avery know. 
-The html section will need to be copy pasted for every page but the css wil 
-be shared
-The images are templates and will need to be changed 
-elements will need to be added according to what you need for the specific page
--->
+<body class="centered-flex">
+    <div id="fullBook">
 
-<body>
-    <section id="fullBook"> <!--Wraps the entire book in a container so we can play with the position absolutes-->
-        <header id="bookMarks">
-            <nav> <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
-                <section id="leftBookmarks">
-                    <a href="../index.html">Home</a>
-                    <a href="./kiosk.html">Kiosk</a>
-                    <a href="./robot.html">Robot</a>
-                    <a href="./video.html">Video</a>
-                    <a href="./tutorial.html">Tutorial</a>
+        <!--Home bookmark-->
+        <div id="homeBookmark" class="centered-flex">
+            <a id="home" href="../index.html">Home</a>
+        </div>
+
+        <div id="restOfBook" class="centered-flex">
+
+            <!--Bookmarks-->
+            <div id="bookmarks">
+                <nav class="centered-flex">
+                    <section id="leftBookmarks" class="centered-flex">
+                        <a href="./kiosk.html">Kiosk</a>
+                        <a href="./robot.html">Robot</a>
+                        <a href="./video.html">Video</a>
+                        <a href="./tutorial.html">Tutorial</a>
+                        <a href="">Programming</a>
+                    </section>
+                    <section id="rightBookmarks" class="centered-flex">
+                        <a href="./harp.html">Harp</a>
+                        <a href="./rules.html">Rules</a>
+                        <a href="timeline.html">Timeline</a>
+                        <a href="./aboutus.html">About Us</a>
+                    </section>
+                </nav>
+            </div>
+
+            <!--Book-->
+            <section id="book" class="centered-flex">
+
+                <!--Left side-->
+                <section id="leftPage">
+                    <header class="header">
+                        <h2 class="centered-flex">Robot</h2>
+                        <div class="centered-flex">
+                            <img src="./../Assets/Images/download.jpg" alt="Group photo of the robot team.">
+                        </div>
+                    </header>
+
+                    <div class="first-entry">
+                        ***FIRST ENTRY*** <br><br><br>
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, maxime facilis. Possimus
+                        distinctio fugit harum similique commodi asperiores, et assumenda ad eius ullam eaque pariatur
+                        cumque consequatur voluptatibus deleniti tempora?
+                    </div>
+
+                    <div class="robot-intro-outer-div centered-flex">
+                        <div class="robot-plan centered-flex">
+                            Robot plan(img)
+                        </div>
+
+                        <div class="robot-intro centered-flex">
+                            Intro to robot(text)
+                        </div>
+                    </div>
+
+                    <div class="rules">
+                        ***RULES***
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat accusamus qui at quo.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat accusamus qui at quo.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat accusamus qui at quo.
+                            </li>
+                        </ul>
+                    </div>
+
                 </section>
-                <section id="rightBookmarks">
-                    <a href="./harp.html">Harp</a>
-                    <a href="">Programming</a>
-                    <a href="./rules.html">Rules</a>
-                    <a href="./timeline.html">Timeline</a>
-                    <a href="./aboutus.html">About Us</a>
+
+                <!--Divider/Middle-->
+                <section id="middle" class="centered-flex"></section>
+
+                <!--Right side-->
+                <section id="rightPage">
+                    <section class="content">
+                        <p>Blah blah</p>
+                    </section>
                 </section>
-            </nav>
-        </header>
-        <section id="book">
-            <section id="leftPage">
-                <header>
-                    <h2>Robot</h2>
-                </header>
-                <p>
-                  Intro
-                </p>
-                <p>
-                  Buffer paragraph
-                </p>
+
             </section>
-            <section id="middle">
-                <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
-            </section>
-            <section id="rightPage">
-                <section class="content">
-                    <p>
-                      Progress
-                    </p>
-                    <p>
-                      Conclusion
-                    </p>
-                </section>
-            </section>
-        </section>
-    </section>
+        </div>
+    </div>
+
 </body>
 
 </html>
