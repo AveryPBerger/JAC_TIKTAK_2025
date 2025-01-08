@@ -1,5 +1,3 @@
-/*----------------------------------------------------------------------Book-------------------------------------------------------------*/
-
 #fullBook {
     display: grid;
     grid-template-columns: 0.05fr 0.95fr;
@@ -21,24 +19,21 @@
 
 #middle {
     width: 1em;
-    /*TBD*/
     height: 100%;
     background-color: #964B00;
 }
 
-/*Leaving the display prop unset for more flexibility/customization*/
 #leftPage {
-    width: 100%;
+    width: 30.5rem;
     height: 100%;
     margin: 1%;
 }
 
 #rightPage {
-    width: 100%;
+    width: 30.5rem;
     height: 100%;
 }
 
-/*----------------------------------------------------------------Bookmarks--------------------------------------------------------------*/
 
 #homeBookmark a,
 #leftBookmarks a,
@@ -51,7 +46,6 @@
     height: 100%;
 }
 
-/*Need to figure this out*/
 #home {
     transform: rotate(270deg);
 }
@@ -75,3 +69,29 @@
 #rightBookmarks {
     margin-left: 5em;
 }
+
+
+/* body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.centered-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    height: 90vh;
+}
+
+#fullBook{
+    background-color: magenta;
+    margin-top: 2%;
+}
+
+#bookmarks,nav{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+} */
+
