@@ -1,13 +1,49 @@
 const listItems = document.getElementsByClassName('dot');
-const colors = ['#f39c12', '#3498db', '#e74c3c', '#9b59b6', '#1abc9c'];
+const colors = ['#f39c12', '#3498db', '#e74c3c', '#9b59b6', '#1abc9c','#FF69B4'];
+const left = document.getElementById("leftContent");
+const right = document.getElementById("rightContent");
+const testText = "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one, but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them";
+const testImg = "../Assets/Images/GroupEvilGrin.png";
 document.addEventListener("DOMContentLoaded", ()=>{
     AddLegendColous();
-    createImageTextCombo("rightPage","../Assets/Images/GroupEvilGrin.png","Important text here that spans multiple lines so that it looks really good mhm yah you totally believe me and I really hope that this ramble");
-    createImageTextCombo("timelineInfo","../Assets/Images/GroupEvilGrin.png","Important text here that spans multiple lines so that it looks really good mhm yah you totally believe me and I really hope that this ramble");
-    createImageTextCombo("timelineInfo","../Assets/Images/GroupEvilGrin.png","Important text here that spans multiple lines so that it looks really good mhm yah you totally believe me and I really hope that this ramble");
-
+   
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    AddLeftImgTextCombo(testText,testImg);
+    AddRightImgTextCombo(testText,testImg);
+    
 })
 
+function AddLeftImgTextCombo(textContent,imagePath){
+    AddImage(left,testImg);
+    AddText(right,testText);
+}
+
+
+function AddRightImgTextCombo(textContent,imagePath){
+    AddImage(right,testImg);
+    AddText(left,testText);
+}
 
 function AddLegendColous(){
     for(let i = 0; i < listItems.length;i++){
@@ -16,32 +52,16 @@ function AddLegendColous(){
 
 }
 
-function createImageTextCombo(containerId, imagePath, textContent) {
-    // Get the parent container
-    const container = document.getElementById(containerId);
-
-    if (!container) {
-        console.error(`Container with ID "${containerId}" not found.`);
-        return;
-    }
-
-    // Create the <article> element
-    const article = document.createElement('article');
-    article.className = 'ImageTextCombo';
-
-    // Create the <img> element
+function AddImage(side, imagePath){
     const img = document.createElement('img');
     img.src = imagePath;
-    img.alt = 'Image description'; // Update with a relevant alt text
+    img.alt = 'Image description';
+    img.className = 'rImg'
+    side.append(img);
+}
 
-    // Create the <p> element
-    const paragraph = document.createElement('p');
-    paragraph.textContent = textContent;
-
-    // Append the <img> and <p> elements to the <article>
-    article.appendChild(img);
-    article.appendChild(paragraph);
-
-    // Append the <article> to the container
-    container.appendChild(article);
+function AddText(side, textContent){
+    const text = document.createElement('p');
+    text.textContent = textContent;
+    side.append(text);
 }

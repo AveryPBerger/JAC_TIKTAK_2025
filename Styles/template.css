@@ -1,9 +1,12 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #fullBook {
     display: grid;
     grid-template-columns: 0.05fr 0.95fr;
-
-    width: 75vw;
-    height: 90vh;
 }
 
 #restOfBook {
@@ -14,7 +17,8 @@
     justify-content: space-between;
     width: 100%;
 
-    background-color: #FADFAD;
+    /* background-color: #FADFAD; */
+    background-image: url(../Assets/Images/bookBackground.webp);
 }
 
 #middle {
@@ -24,13 +28,11 @@
 }
 
 #leftPage {
-    width: 30.5rem;
     height: 100%;
-    margin: 1%;
+
 }
 
 #rightPage {
-    width: 30.5rem;
     height: 100%;
 }
 
@@ -69,29 +71,4 @@
 #rightBookmarks {
     margin-left: 5em;
 }
-
-
-/* body,html{
-    height: 100%;
-    width: 100%;
-}
-
-.centered-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75vw;
-    height: 90vh;
-}
-
-#fullBook{
-    background-color: magenta;
-    margin-top: 2%;
-}
-
-#bookmarks,nav{
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-} */
 
