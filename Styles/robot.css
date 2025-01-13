@@ -35,6 +35,10 @@
     height: 25%;
 }
 
+.rules{
+    flex-direction: column;
+}
+
 /*===Right side===*/
 
 #rightPage{
