@@ -1,24 +1,20 @@
 /*======================Temp styling --remove==========================*/
-
-img{
-    height: 3em;
-    width: 3em;
-}
-
 .robot-intro-outer-div,
 .first-entry,
-.second-entry,
-.third-entry,
 .robot-plan,
 .robot-intro,
-.rules,
-.progress-imgs-outer-div,
-.mantra-outer-div,
-.conclusion-img-div{
+.rules{
 
     height: 100%;
     width: 100%;
 
+    border: 0.15em solid darkorchid;
+}
+
+.second-entry,
+.third-entry,
+.mantra-outer-div,
+.conclusion-img-div{
     border: 0.15em solid darkorchid;
 }
 
@@ -43,4 +39,13 @@ img{
 
 #rightPage{
     flex-direction: column;
+}
+
+.progress-imgs-outer-div{
+    height: 25em;
+}
+
+.progress-img{
+    height: 95%;
+    width: 95%;
 }
