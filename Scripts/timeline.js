@@ -4,45 +4,95 @@ const left = document.getElementById("leftContent");
 const right = document.getElementById("rightContent");
 const testText = "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one, but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them";
 const testImg = "../Assets/Images/GroupEvilGrin.png";
+
+
+
+const AllImgs = ["../Assets/Images/GroupEvilGrin.png",
+    "../Assets/Images/GroupEvilGrin.png",
+    "../Assets/Images/GroupEvilGrin.png",
+    "../Assets/Images/GroupEvilGrin.png",
+    "../Assets/Images/GroupEvilGrin.png",
+    "../Assets/Images/GroupEvilGrin.png",
+    "../Assets/Images/GroupEvilGrin.png",
+    "../Assets/Images/GroupEvilGrin.png"]
+
+const RobotImgs = [ "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg",
+]
+
+const KioskImgs = [
+    "../Assets/Images/lostInClouds.jpg",
+    "../Assets/Images/lostInClouds.jpg",
+    "../Assets/Images/lostInClouds.jpg",
+    "../Assets/Images/lostInClouds.jpg",
+    "../Assets/Images/lostInClouds.jpg",
+    "../Assets/Images/lostInClouds.jpg",
+    "../Assets/Images/lostInClouds.jpg",
+    "../Assets/Images/lostInClouds.jpg",
+]
+
+const AllTexts = [
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+]
+
+const RoboTexts = [
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+]
+
+const KioskTexts = [
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+]
+
 document.addEventListener("DOMContentLoaded", ()=>{
     AddLegendColous();
-   
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    AddLeftImgTextCombo(testText,testImg);
-    AddRightImgTextCombo(testText,testImg);
-    
 })
 
+function Robot(){
+    AddThing(RobotImgs,RoboTexts);
+}
+function AddThing(imgs,texts){
+     imgs.forEach((img,index) => {
+        AddLeftImgTextCombo(texts[index],img);
+        AddRightImgTextCombo(texts[index],img);
+     });
+}
+
 function AddLeftImgTextCombo(textContent,imagePath){
-    AddImage(left,testImg);
-    AddText(right,testText);
+    AddImage(left,imagePath);
+    AddText(right,textContent);
 }
 
 
 function AddRightImgTextCombo(textContent,imagePath){
-    AddImage(right,testImg);
-    AddText(left,testText);
+    AddImage(right,imagePath);
+    AddText(left,textContent);
 }
 
 function AddLegendColous(){
