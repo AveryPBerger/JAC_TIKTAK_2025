@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <!-- <link rel="stylesheet" href="../Styles/timeline.css"> -->
+    <link rel="stylesheet" href="../Styles/globalStyle.css" />
+    <link rel="stylesheet" href="../Styles/template.css" />
+    <link rel="stylesheet" href="../Styles/timeline.css" />
+    <script src="../Scripts/timeline.js" defer></script>
+</head>
+
+<body class="centered-flex">
+    <div id="fullBook">
+        <div id="homeBookmark" class="centered-flex">
+            <a id="home" href="../index.html">Home</a>
+        </div>
+        <div id="restOfBook" class="centered-flex">
+            <div id="bookmarks">
+                <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
+                <nav class="centered-flex">
+                    <section id="leftBookmarks" class="centered-flex">
+                        <a href="./kiosk.html">Kiosk</a>
+                        <a href="./robot.html">Robot</a>
+                        <a href="./video.html">Video</a>
+                        <a href="./tutorial.html">Tutorial</a>
+                        <a href="">Programming</a>
+                    </section>
+                    <section id="rightBookmarks" class="centered-flex">
+                        <a href="./harp.html">Harp</a>
+                        <a href="./rules.html">Rules</a>
+                        <a href="timeline.html">Timeline</a>
+                        <a href="./aboutus.html">About Us</a>
+                    </section>
+                </nav>
+            </div>
+            <section id="book" class="centered-flex">
+                <section id="leftPage">
+                    <header>
+                        <h1>Timeline</h1>
+                    </header>
+                    <article class="ImageTextCombo">
+                        <p>Important text here that spans multiple lines so that it looks really good mhm yah you
+                            totally believe me and I really hope that this ramble</p>
+                        <img src="../Assets/Images/GroupEvilGrin.png" alt="GroupEvilGrin">
+                    </article>
+                    <section class="legend">
+                        <h4>Legend</h4>
+                        <ul>
+
+                            <li><span onclick="Robot()" class="dot">&nbsp</span>Home</li>
+                            <li><span class="dot">&nbsp</span>Robot</li>
+                            <li><span class="dot">&nbsp</span>Kiosk</li>
+                            <li><span class="dot">&nbsp</span>Video</li>
+                            <li><span class="dot">&nbsp</span>Website</li>
+                            <li><span class="dot">&nbsp</span>Harp</li>
+                        </ul>
+                    </section>
+
+                </section>
+                <section id="middle" class="centered-flex">
+                    <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
+                </section>
+                <section id="rightPage">
+                    <section id="leftContent">
+                    </section>
+                    <section id="rightContent">
+                    </section>
+
+
+                    <img id="cobbleRoad" style="background-color: teal;" alt="cobbleRoad">
+                </section>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
