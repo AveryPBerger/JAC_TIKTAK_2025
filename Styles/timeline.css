@@ -56,6 +56,7 @@ body, html {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
     font-size: 0.9em;
     color: #555;;
+    cursor: default;
 }
 
 .legend h4 {
