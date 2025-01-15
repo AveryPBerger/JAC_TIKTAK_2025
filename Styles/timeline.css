@@ -57,6 +57,15 @@ body, html {
     font-size: 0.9em;
     color: #555;;
     cursor: default;
+
+}
+
+.legend li{
+    cursor: pointer;
+}
+
+.legend li:hover{
+    background-color: violet;
 }
 
 .legend h4 {
@@ -92,11 +101,14 @@ body, html {
     width: 30.5rem;
     height: 90vh;
     display: grid;
-    grid-template-columns:  14rem 1rem 14rem;
+    grid-template-columns:  auto 1rem auto;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
+#rightPage::-webkit-scrollbar {
+    display: none;
+  }
 
 .rightText{
     grid-column:3 ;
@@ -145,4 +157,20 @@ body, html {
     grid-column-start: 2;
     grid-row-start: 1;
     max-width: 10rem;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    #leftPage {
+        display: none; /* Hides the left page */
+    }
+
+    #middle {
+        display: none;
+    }
+    #rightPage {
+        width: 100%; /* Make the right page occupy the full width */
+
+    }
 }
