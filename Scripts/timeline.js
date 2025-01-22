@@ -149,3 +149,10 @@ function AddText(side, textContent){
     text.textContent = textContent;
     side.append(text);
 }
+
+function NextPage() {
+    const rightPage = document.getElementById("rightPage");
+    const leftPage = document.getElementById("leftPage");
+    rightPage.style.display = "grid";
+    leftPage.style.display = "none";
+}
