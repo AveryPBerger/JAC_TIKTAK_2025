@@ -37,6 +37,14 @@ const KioskImgs = [
     "../Assets/Images/lostInClouds.jpg",
 ]
 
+const VideoImgs = [
+
+]
+
+const HarpImgs = [
+
+]
+
 const AllTexts = [
     "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
     "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
@@ -70,13 +78,39 @@ const KioskTexts = [
     "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
 ]
 
+const videoTexts = [
+
+]
+
+const harpTexts = [
+    
+]
+
 document.addEventListener("DOMContentLoaded", ()=>{
     AddLegendColous();
+    All();
 })
 
+function RemoveContent(){
+    document.getElementById("leftContent").innerHTML = "";
+    document.getElementById("rightContent").innerHTML = "";
+}
+
 function Robot(){
+    RemoveContent();
     AddThing(RobotImgs,RoboTexts);
 }
+
+function Kiosk(){
+    RemoveContent();
+    AddThing(KioskImgs,KioskTexts);
+}
+
+function All(){
+    RemoveContent();
+    AddThing(AllImgs,AllTexts);
+}
+
 function AddThing(imgs,texts){
      imgs.forEach((img,index) => {
         AddLeftImgTextCombo(texts[index],img);
@@ -114,4 +148,11 @@ function AddText(side, textContent){
     const text = document.createElement('p');
     text.textContent = textContent;
     side.append(text);
+}
+
+function NextPage() {
+    const rightPage = document.getElementById("rightPage");
+    const leftPage = document.getElementById("leftPage");
+    rightPage.style.display = "grid";
+    leftPage.style.display = "none";
 }

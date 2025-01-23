@@ -23,10 +23,11 @@ body, html {
     width: 25rem;
     max-height: 25%;
     padding: 5%;
-    border: 0.5%;
+    border: 0.5rem;
     background-color: green;
     border-radius: 5%;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 .ImageTextCombo img{
     max-height: 15rem;
@@ -40,8 +41,7 @@ body, html {
 }
 
 #leftPage header {
-    display: flex;
-    align-items: center;
+
     font-size: larger;
     padding-left: 5%;
     
@@ -56,6 +56,16 @@ body, html {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
     font-size: 0.9em;
     color: #555;;
+    cursor: default;
+
+}
+
+.legend li{
+    cursor: pointer;
+}
+
+.legend li:hover{
+    background-color: violet;
 }
 
 .legend h4 {
@@ -72,8 +82,6 @@ body, html {
 }
 
 .legend li {
-    display: flex;
-    align-items: center;
     margin-bottom: 3%;
     width: 10vw;
     margin: 5px;
@@ -89,13 +97,16 @@ body, html {
 
 #rightPage{
     width: 30.5rem;
-    height: 90vh;
+    height: 75vh;
     display: grid;
-    grid-template-columns:  14rem 1rem 14rem;
+    grid-template-columns:  auto 1rem auto;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
+#rightPage::-webkit-scrollbar {
+    display: none;
+  }
 
 .rightText{
     grid-column:3 ;
@@ -144,4 +155,34 @@ body, html {
     grid-column-start: 2;
     grid-row-start: 1;
     max-width: 10rem;
+}
+
+.rightArrow{
+    display: none;
+}
+
+
+@media screen and (max-width: 1050px) {
+    #rightPage {
+        display: none; 
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #middle {
+        display: none;
+    }
+    #leftPage {
+        width: 100%; 
+        height: 100%;
+        align-items: center;
+    }
+
+    .rightArrow{
+        display: block;
+        padding-top: 1%;
+        margin-left: auto;
+    }
+    
 }
