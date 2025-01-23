@@ -1,51 +1,79 @@
-/*======================Temp styling --remove==========================*/
-.robot-intro-outer-div,
-.first-entry,
-.robot-plan,
-.robot-intro,
-.rules{
+/*===General modifications===*/
 
-    height: 100%;
-    width: 100%;
-
-    border: 0.15em solid darkorchid;
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
 }
-
-.second-entry,
-.third-entry,
-.mantra-outer-div,
-.conclusion-img-div{
-    border: 0.15em solid darkorchid;
-}
-
-/*=====================================================================*/
 
 /*===Left side===*/
 
-#leftPage{
+#leftPage {
     flex-direction: column;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
     height: 25%;
+
+    margin-top: 1em;
+}
+
+.group-photo-outer-container {
+    width: 85%;
+    height: 100%;
+
+    border: 0.5em solid white;
+    border-radius: 1.5em;
+}
+
+.group-photo {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 1em;
+}
+
+.rules {
+    flex-direction: column;
+}
+
+.rules-inner-container {
+    width: 75%;
 }
 
 /*===Right side===*/
 
-#rightPage{
+#rightPage {
+    display: flex;
+    align-items: center;
     flex-direction: column;
+
+    max-width: 49%;
 }
 
-.progress-imgs-outer-div{
-    height: 25em;
+.second-entry-outer-div,
+.conclusion-outer-div {
+    width: 90%;
+
+    margin-top: 1em;
 }
 
-.progress-img{
-    height: 95%;
-    width: 95%;
+.progress-imgs-outer-div {
+    margin-top: 1em;
+
+    height: 15em;
+}
+
+.progress-img {
+    border: 0.5em solid white;
+    border-radius: 1em;
+
+    height: 100%;
+    width: 100%;
 }
