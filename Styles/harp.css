@@ -13,7 +13,7 @@ body {
   .page {
     background: #f9e7b6; /* Light tan paper background */
     width: 300px;
-    margin: 0 10px;
+    margin: 0px;
     border: 5px solid #ca813a; /* Binding edge */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     padding: 15px;
@@ -31,10 +31,16 @@ body {
   }
   
   .title h1 {
-    font-size: 24px;
-    font-family: 'Brush Script MT', cursive;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     flex: 1;
+  }
+
+  .titlePicture {
+    width: 100px; 
+    height: auto;
   }
   
   .icon {
