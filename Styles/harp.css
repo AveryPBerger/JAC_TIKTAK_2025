@@ -12,7 +12,7 @@ body {
   
   .page {
     background: #f9e7b6; /* Light tan paper background */
-    width: 300px;
+    width: 450px;
     margin: 0px;
     border: 5px solid #ca813a; /* Binding edge */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -42,6 +42,17 @@ body {
     width: 100px; 
     height: auto;
   }
+
+  .polaroidPicture, .postItPicture{
+    width: 200px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .postItPicture{
+    width: 250px;
+  }
   
   .icon {
     width: 30px;
@@ -62,8 +73,8 @@ body {
   }
   
   .image-frame {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background: #000; /* Placeholder for images */
     position: relative;
     border: 5px solid #fff;
