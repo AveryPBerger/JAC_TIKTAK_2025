@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="../Styles/globalStyle.css" />
     <link rel="stylesheet" href="../Styles/template.css" />
+    <link rel="stylesheet" href="../Styles/video.css" />
 </head>
 
 <!--
@@ -47,20 +54,68 @@ elements will need to be added according to what you need for the specific page
             </div>
             <section id="book" class="centered-flex">
                 <section id="leftPage">
+
                     <header>
-                        <h2>Title</h2>
+                        <h2>Video</h2>
                     </header>
+                    <video width="320" height="240" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video>
+                    <section class="VideoDescription">
                     <p>
-                        Text paragraph blah blah
+                    Video Description 
                     </p>
-                    <img src="../Assets/Images/download.jpg">
+                    </section>
+                    
+                   
+                    <section class="Avery">
+                        <figure> 
+                            
+                        </figure>
+                    </section>
+
+                    <section class="JustJeff">
+                        <figure>
+                            
+                        </figure>
+                        <!--
+                        in the section class Avery and Just Jeff there used to be:
+                        <img src="image/2024_video_avery1280x373.jpg"> (Avery)
+                        <img src="image/2024_video_justJeff280x210.jpg">(Jeff)
+                        <img src="image/2024_video_brickwall280x210.jpg">(Jeff)
+
+                        
+                        -->
+                        <img  src="../Assets/Images/lostInClouds.jpg" alt="micheal">
+                        
+                        <section class = "Avery">
+                        </section>                      
+                    </section>
+                    
                 </section>
                 <section id="middle" class="centered-flex">
                     <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
                 </section>
                 <section id="rightPage">
                     <section class="content">
-                        <p>Blah blah</p>
+                       
+                        
+                        <img  src="../Assets/Images/sauteringXT60.jpg" alt="bob">
+                        <section class ="TextBox">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </section>
+                        <section class = "VideoDescription">
+                            <h2> 
+                          
+                                Saying/Mantra -Author
+                              
+                             </h2>
+                        </section>
+                        
                     </section>
                 </section>
             </section>
