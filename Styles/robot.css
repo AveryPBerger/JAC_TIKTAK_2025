@@ -1,6 +1,6 @@
 /*===General modifications===*/
 
-body{
+body {
     overflow: hidden;
 }
 
@@ -11,25 +11,19 @@ h4 {
     margin: 0;
 }
 
-img{
-    width:100%;
+img {
+    width: 100%;
     height: 100%;
 }
 
 /*===Left side===*/
 
-#leftPage {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-    width: 49%; 
-}
 
-.header{
+.header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:1em;
+    gap: 1em;
 }
 
 .group-photo-outer-container {
@@ -73,7 +67,7 @@ img{
 .progress-imgs-outer-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:2em;
+    gap: 2em;
 
     margin-top: 1em;
 }
@@ -83,27 +77,7 @@ img{
     border-radius: 1em;
 }
 
-.conclusion-outer-div{
+.conclusion-outer-div {
     margin-top: 3em;
     margin-bottom: 1em;
-}
-
-/*===Responsive===*/
-
-@media screen and (max-width: 1050px) {
-    #rightPage {
-        display: none; 
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #middle {
-        display: none;
-    }
-    #leftPage {
-        width: 100%; 
-        height: 100%;
-        align-items: center;
-    }
 }
