@@ -1,0 +1,20 @@
+.VideoDescription 
+{
+   width: 350px;                       
+   background-color: #E5CDA0;
+   
+} 
+.TextBox{
+   width: 530px;  
+}
+
+img{
+    width: 25%;
+}
+
+#leftPage{
+    padding: 1%;
+}
+#rightPage{
+    padding: 1%;
+}

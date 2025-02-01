@@ -2,8 +2,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../Assets/Illustration_sans_titre.jpg");
-
+    background-image: url("../Assets/Images/Illustration_sans_titre.webp");
 }
 
 #fullBook {
