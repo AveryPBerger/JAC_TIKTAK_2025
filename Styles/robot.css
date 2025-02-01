@@ -7,6 +7,11 @@ h4 {
     margin: 0;
 }
 
+img{
+    width:100%;
+    height:100%;
+}
+
 /*===Left side===*/
 
 #leftPage {
@@ -18,24 +23,15 @@ h4 {
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
-    height: 25%;
-
     margin-top: 1em;
 }
 
 .group-photo-outer-container {
-    width: 85%;
-    height: 100%;
-
     border: 0.5em solid white;
     border-radius: 1.5em;
 }
 
 .group-photo {
-    height: 100%;
-    width: 100%;
-
     border-radius: 1em;
 }
 
@@ -65,15 +61,19 @@ h4 {
 }
 
 .progress-imgs-outer-div {
-    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2em;
 
-    height: 15em;
+    margin-top: 1em;
 }
 
 .progress-img {
     border: 0.5em solid white;
     border-radius: 1em;
+}
 
-    height: 100%;
-    width: 100%;
+.conclusion-outer-div{
+    margin-top: 3em;
+    margin-bottom: 1em;
 }
