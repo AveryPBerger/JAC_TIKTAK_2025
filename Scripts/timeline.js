@@ -7,14 +7,7 @@ const testImg = "../Assets/Images/GroupEvilGrin.png";
 
 
 
-const AllImgs = ["../Assets/Images/GroupEvilGrin.png",
-    "../Assets/Images/GroupEvilGrin.png",
-    "../Assets/Images/GroupEvilGrin.png",
-    "../Assets/Images/GroupEvilGrin.png",
-    "../Assets/Images/GroupEvilGrin.png",
-    "../Assets/Images/GroupEvilGrin.png",
-    "../Assets/Images/GroupEvilGrin.png",
-    "../Assets/Images/GroupEvilGrin.png"]
+const AllImgs = ["../Assets/Images/Timeline/firstDay.jpg","../Assets/Images/Timeline/ThemeDay.jpg","../Assets/Images/Timeline/Shopping.jpg","../Assets/Images/Timeline/WinterBreak.JPEG"]
 
 const RobotImgs = [ "../Assets/Images/sauteringXT60.jpg",
     "../Assets/Images/sauteringXT60.jpg",
@@ -46,15 +39,13 @@ const HarpImgs = [
 ]
 
 const AllTexts = [
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
-    "Ok, so yk i think that paper snowflakes are an obvious they all know how to make one but then i went to summer camp and we had a paper snowflake competition and adults didn't know how to make them",
+    "The clubs first meeting of the semester! We got a lot of new potential eager members and are starting the year very excited!",
+    "Theme Day! Here we’re holding our presentation and votes for what theme we want to go with this year. The lucky winner is JAC and the Beanstalk",
+    "Fun times at the kickoff, singing hot to go, getting new socks and seeing the game revealed for the first time",
+    "Shopping day!!!! Went all over montreal getting and ordering everything that we’re going to need to build a full kiosk and robot",
+    "What a winter break, our dedicated team showing up during our break and working hard to put the walls of our kiosk up and getting the robot functional"
 ]
+
 
 const RoboTexts = [
     "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
@@ -68,14 +59,10 @@ const RoboTexts = [
 ]
 
 const KioskTexts = [
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
-    "Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son.",
+   "Time for planning! The kiosk members brainstorm how they want to incorporate jack and the beanstalk to a set of walls and a table. Lots of foliage!!",
+   "Hard at work! Kiosk members are very sleepy after a long session of sanding and priming last year’s walls and furniture",
+   "What a landscape! Kiosk members paint a base coat of the mural before deciding to fully assemble the walls for better transitions",
+   "Whoa nelly!!! That’s gonna be a tall beanstalk. Chicken wire is not a joy to work with but we will prevail"
 ]
 
 const videoTexts = [
@@ -111,11 +98,16 @@ function All(){
     AddThing(AllImgs,AllTexts);
 }
 
-function AddThing(imgs,texts){
-     imgs.forEach((img,index) => {
-        AddLeftImgTextCombo(texts[index],img);
-        AddRightImgTextCombo(texts[index],img);
-     });
+function AddThing(imgs, texts) {
+    imgs.forEach((img, index) => {
+        if (index % 2 === 0) {
+            // Even index -> Left side
+            AddLeftImgTextCombo(texts[index], img);
+        } else {
+            // Odd index -> Right side
+            AddRightImgTextCombo(texts[index], img);
+        }
+    });
 }
 
 function AddLeftImgTextCombo(textContent,imagePath){

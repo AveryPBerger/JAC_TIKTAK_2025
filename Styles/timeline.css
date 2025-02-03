@@ -121,8 +121,8 @@
 }
 
 .rImg{
-    max-height: 25vh;
-    width: 50%;
+    padding: 10%;
+    width: 20vw;
 }
 
 #leftContent{
