@@ -8,12 +8,6 @@
         height: 100%;
         align-items: center;
     }
-
-    .arrow:nth-of-type(2){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 @media screen and (min-width: 1051px) {
@@ -31,9 +25,5 @@
         flex-direction: column;
 
         width: 50%;
-    }
-
-    .arrow{
-        display: none;
     }
 }
