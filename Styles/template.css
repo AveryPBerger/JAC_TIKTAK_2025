@@ -68,7 +68,6 @@ body{
 
 #leftPage {
     height: 100%;
-
 }
 
 #rightPage {
@@ -80,6 +79,12 @@ body{
 #leftBookmarks a,
 #rightBookmarks a {
     background-color: gold;
+}
+
+#homeBookmark .currentPage,
+#leftBookmarks .currentPage,
+#rightBookmarks .currentPage{
+    background-color: green;
 }
 
 #homeBookmark {
@@ -117,3 +122,30 @@ body{
     margin-left: 5em;
 }
 
+
+@media screen and (max-width: 1050px) {
+    #rightPage {
+        display: none; 
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #rightBookmarks{
+        display: none;
+    }
+    #middle {
+        display: none;
+    }
+    #leftPage {
+        width: 100%; 
+        height: 100%;
+        align-items: center;
+    }
+
+    .rightArrow{
+        display: block;
+        padding-top: 1%;
+        margin-left: auto;
+    }
+    
+}
