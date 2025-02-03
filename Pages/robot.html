@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="../Styles/globalStyle.css">
     <link rel="stylesheet" href="../Styles/template.css">
     <link rel="stylesheet" href="./../Styles/robot.css">
-    <script src="../Scripts/global-script.js" defer></script>
+    <link rel="stylesheet" href="./../Styles/page-switch.css">
 
+    <!--JS-->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="./../Scripts/page-switch.js"></script>
+    <script src="../Scripts/global-script.js" defer></script>
 </head>
 
 <body class="centered-flex">
+    <div class="arrow">
+        <h2>&lt;&lt;</h2>
+    </div>
     <div id="fullBook">
         <!--Home bookmark-->
         <div id="homeBookmark" class="centered-flex">
@@ -44,31 +51,26 @@
             <section id="book" class="centered-flex">
 
                 <!--Left side-->
-                <section id="leftPage" class="centered-flex">
-                    <header class="header">
+                <section id="leftPage">
+                    <div class="header">
                         <h2 class="title centered-flex">Robot</h2>
-                        <div class="centered-flex">
-                            <div class="group-photo-outer-container centered-flex">
-                                <img src="./../Assets/Images/Robot/Planning.JPEG"
-                                    alt="Robot team planning out their game strategy and robot design."
-                                    class="group-photo">
+                    </div>
+
+                    <div class="first-entry-wrapper">
+                        <div class="final-img-wrapper centered-flex">
+                            <div class="conclusion-img-div centered-flex">
+                                <img src="./../Assets/Images/Robot/Last.png" alt="Robot in the final building stage.">
                             </div>
                         </div>
-                    </header>
-
-                    <div class="first-entry">
-                        ***FIRST ENTRY*** <br><br><br>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, maxime facilis. Possimus
-                        distinctio fugit harum similique commodi asperiores, et assumenda ad eius ullam eaque pariatur
-                        cumque consequatur voluptatibus deleniti tempora?
+                        <div class="first-entry centered-flex">
+                            The robot that will compete in this year's CRC competition is a simple yet effective design.
+                            It is based on a square drivetrain, and a belt and pulley system lifts the game pieces,
+                            guided by aluminum extrusion bars, maximizing stability. The gripper can place the game
+                            pieces on different stations by rotating around the x-axis, allowing maximum versatility.
+                        </div>
                     </div>
 
-                    <div class="robot-plan centered-flex">
-                        Robot plan(img)
-                    </div>
-
-                    <div class="rules centered-flex">
+                    <div class="rules">
                         <h2 class="centered-flex">Rules</h2>
 
                         <ul class="rules-inner-container">
@@ -86,7 +88,6 @@
                             <li>Robots must pass safety and technical certifications.</li>
                             <li>Modifications require re-certification before competition.</li>
                         </ul>
-
                     </div>
 
                 </section>
@@ -107,31 +108,28 @@
                             and laid the foundation for the success of our project.
                         </div>
 
-                        <div class="progress-imgs-outer-div centered-flex">
-                            <div class="progress-img-inner-div centered-flex" style="margin-right: 2em;">
+                        <div class="progress-imgs-outer-div">
+                            <div class="progress-img-inner-div">
+                                <img src="./../Assets/Images/Robot/plan.png"
+                                    alt="Model of one of the robot's component." class="progress-img">
+                            </div>
+                            <div class="progress-img-inner-div">
                                 <img src="./../Assets/Images/Robot/Building.JPEG" alt="Robot team building the robot."
                                     class="progress-img">
                             </div>
-                            <div class="progress-img-inner-div centered-flex">
+                            <div class="progress-img-inner-div">
                                 <img src="./../Assets/Images/Robot/Midway.JPEG"
                                     alt="Robot midway through the building process." class="progress-img">
                             </div>
                         </div>
                     </div>
 
-                    <!--Remove?
-                    <div class="mantra-outer-div">
-                        ***SAYING/MANTRA***
-                    </div>
-                    -->
-
                     <div class="conclusion-outer-div centered-flex">
-                        <div class="third-entry">
-                            *** THIRD ENTRY ***
-                        </div>
-
-                        <div class="conclusion-img-div centered-flex">
-                            <img src="./../Asets/Images/download.jpg">
+                        <div class="third-entry centered-flex">
+                            A problem during the robot's construction was the team's lack of experience with CAD design
+                            software, which has a steep learning curve. Certain parts of the robot required 3D-printed
+                            pieces, and it took a lot of time to design them effectively. Many YouTube tutorials and
+                            internet guides helped teach the robot team how to use Fusion 360.
                         </div>
                     </div>
                 </section>
@@ -139,7 +137,9 @@
             </section>
         </div>
     </div>
-
+    <div class="arrow">
+        <h2>&gt;&gt;</h2>
+    </div>
 </body>
 
 </html>
