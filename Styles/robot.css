@@ -33,25 +33,23 @@ img {
     font-size: xx-large;
 }
 
-.group-photo-outer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 0.5em solid white;
-    border-radius: 1.5em;
-}
-
-#group-photo {
-    border-radius: 1em;
-}
-
 .first-entry-wrapper {
     display: grid;
     grid-template-columns: 0.3fr 0.7fr;
     gap: 1em;
 
     width: 95%;
+}
+
+.conclusion-img-div {
+    border: 0.5em solid white;
+    border-radius: 1.5em;
+    height: 80%;
+    width: 100%;
+}
+
+.conclusion-img-div img {
+    border-radius: 1em;
 }
 
 .rules {
@@ -99,15 +97,4 @@ img {
     margin-top: 2em;
 
     width: 90%;
-}
-
-.conclusion-img-div {
-    border: 0.5em solid white;
-    border-radius: 1.5em;
-    height: 80%;
-    width: 100%;
-}
-
-.conclusion-img-div img {
-    border-radius: 1em;
 }

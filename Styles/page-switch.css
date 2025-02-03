@@ -1,39 +1,3 @@
-.arrow{
-    padding: 1em;
-    border-radius: 1em;
-
-    background-color: black;
-    color: white;
-
-    font-weight: bold;
-
-    transition: 0.2s;
-}
-
-.arrow:first-of-type:hover{
-    background-color: orange;
-
-    border-radius: 2em;
-
-    color:black;
-
-    transition: 0.2s;
-
-    box-shadow: 0.25em 0.25em black;
-}
-
-.arrow:hover{
-    background-color: orange;
-
-    border-radius: 2em;
-
-    color:black;
-
-    transition: 0.2s;
-
-    box-shadow: -0.25em 0.25em black;
-}
-
 @media screen and (max-width: 1050px) {
     #rightPage {
         display: none;
