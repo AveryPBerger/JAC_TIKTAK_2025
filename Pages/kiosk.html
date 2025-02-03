@@ -4,24 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Kiosk</title>
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="../Styles/globalStyle.css" />
     <link rel="stylesheet" href="../Styles/template.css" />
     <link rel="stylesheet" href="../Styles/kiosk.css" />
+    <script src="../Scripts/global-script.js" defer></script>
 
 </head>
-
-<!--
-NOTES:
-When using this template please keep a few things in mind, if you need to change an ID or a class name for whatever reason
-push to github first and let Avery know. 
-The html section will need to be copy pasted for every page but the css will 
-be shared
-The images are templates and will need to be changed 
-elements will need to be added according to what you need for the specific page
--->
 
 <body class="centered-flex">
     <div id="fullBook">
@@ -30,41 +21,67 @@ elements will need to be added according to what you need for the specific page
         </div>
         <div id="restOfBook" class="centered-flex">
             <div id="bookmarks">
-                <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
                 <nav class="centered-flex">
                     <section id="leftBookmarks" class="centered-flex">
-                        <a href="./kiosk.html">Kiosk</a>
+                        <a class="currentPage" href="./kiosk.html">Kiosk</a>
                         <a href="./robot.html">Robot</a>
                         <a href="./video.html">Video</a>
                         <a href="./tutorial.html">Tutorial</a>
-                        <a href="">Programming</a>
                     </section>
                     <section id="rightBookmarks" class="centered-flex">
                         <a href="./harp.html">Harp</a>
-                        <a href="./rules.html">Rules</a>
-                        <a href="timeline.html">Timeline</a>
+                        <a href="./timeline.html">Timeline</a>
                         <a href="./aboutus.html">About Us</a>
                     </section>
                 </nav>
             </div>
             <section id="book" class="centered-flex">
                 <section id="leftPage">
-                    <header>
-                        <h2>Title</h2>
-                    </header>
-                    <img src="../Assets/Images/download.jpg">
+                    <h2 class="title centered-flex">Kiosk</h2>
+                    <div class="images-container centered-flex">
+                        <div class="images-wrapper centered-flex">
+                            <img src="./../Assets/Images/Kiosk/GroupEvilGrin.png">
+                        </div>
+                        <div class="images-wrapper centered-flex">
+                            <img src="./../Assets/Images/Kiosk/painting.jpg">
+                        </div>
+                    </div>
+
                     <p>
-                        Text paragraph blah blah
+                        Inspired by the theme of JAC and the beanstalk, the kiosk team decided to take
+                        inspiration from the land below the clouds in the original story. The whole kiosk is
+                        based around the concept of the little house where Jack lives with his mother and the ever
+                        important
+                        cow surrounded by vast woods. Of course, there is also the everpresent beanstalk sprouting in
+                        the area.
                     </p>
-               
+
                 </section>
                 <section id="middle" class="centered-flex">
-                    <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
                 </section>
                 <section id="rightPage">
-                    <section class="content">
-                        <p>Blah blah</p>
-                    </section>
+                    <p>After planning the layout and brainstorming all the ideas that would bring the kiosk to life,
+                        it was
+                        finally time to head out on a fairytale adventure to collect the necessary supplies. Once
+                        stores where
+                        visited and materials were acquired, it was time to start building. Most of the materials
+                        from last year's
+                        kiosk were actually reused here to make the walls, benches and table of the new one.
+                    </p>
+
+                    <div class="images-container">
+                        <div class="images-wrapper centered-flex">
+                            <img src="./../Assets/Images/Kiosk/building.jpg">
+                        </div>
+                        <div class="images-wrapper centered-flex">
+                            <img src="./../Assets/Images/Kiosk/materials.jpg">
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolore ullam aperiam facere nisi
+                        numquam at quod sapiente, officia vero, consequatur delectus. Quaerat, quod provident fugit
+                        soluta nulla veritatis assumenda.
+                    </p>
                 </section>
             </section>
         </div>
