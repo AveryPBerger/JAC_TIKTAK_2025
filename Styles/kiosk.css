@@ -8,55 +8,39 @@ p {
     margin: 0;
 }
 
-img{
+img {
     max-height: 100%;
     max-width: 100%;
 }
 
 /*=== Left side ===*/
 
-#leftPage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width:50%;
-}
-
-.images-container{
+.images-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top:1em;
+    margin-top: 1em;
     margin-bottom: 1em;
-    width:95%;
+    width: 95%;
 }
 
-.images-container > *:first-child{
+.images-container>*:first-child {
     margin-right: 0.75em;
 }
 
 /*=== Right side ===*/
 
-#rightPage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width:50%;
-}
-
-.top-right{
+.top-right {
     flex-direction: column;
 }
 
-.building-img-container{
+.building-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top:1em;
+    margin-top: 1em;
     margin-bottom: 1em;
-    width:95%;
+    width: 95%;
 }
