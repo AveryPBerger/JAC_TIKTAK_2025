@@ -20,19 +20,30 @@ document.addEventListener("wheel", (event) => {
     }
 });
 
-document.addEventListener("change",()=>{
-    if(window.innerWidth >= 1050){
-        leftBookmarks.style.display = "flex";
-        rightBookmarks.style.display = "flex";
-        leftPage.style.display = "flex";
-        rightPage.style.display = "flex";    
-    }
-    else{
-        leftPage.style.backgroundColor = "pink";
-        document.backgroundColor = "pink"
+let lastWidth = window.innerWidth;
+
+window.addEventListener("resize", () => {
+    if(window.location.href !== "../Pages/timeline.html"){
+        let currentWidth = window.innerWidth;
+    
+        if (currentWidth > 1050 && lastWidth <= 1050) {
+            onExpand();
+        } else if (currentWidth <= 1050 && lastWidth > 1050) {
+            showLeftPage()
+        }
+        
+        lastWidth = currentWidth;
     }
 
-})
+});
+
+function onExpand() {
+    leftBookmarks.style.display = "flex";
+    rightBookmarks.style.display = "flex";
+    leftPage.style.display = "flex";
+    rightPage.style.display = "flex";    
+}
+
 
 function showRightPage() {
     leftBookmarks.style.display = "none";
