@@ -57,7 +57,7 @@ function createLeftPage(name, quote) {
             <h1 class="role">Creative Team</h1>
         </section>
         <section class="content">
-            <img class="headshot" src="../Assets/HeadShots/${name}.jpeg" alt="${name}" />
+            <img class="headshot" src="../Assets/HeadShots/${name}.jpeg" alt="${name}" loading="lazy"/>
             <p class="quote">${quote}</p>
         </section>
     `;
@@ -70,7 +70,7 @@ function createRightPage(name, quote) {
             <h1 class="role">Creative Team</h1>
         </section>
         <section class="content">
-            <img class="headshot" src="../Assets/HeadShots/${name}.jpeg" alt="${name}" />
+            <img  class="headshot" src="../Assets/HeadShots/${name}.jpeg" alt="${name}" loading="lazy"/>
             <p class="quote">${quote}</p>
         </section>
     `;
