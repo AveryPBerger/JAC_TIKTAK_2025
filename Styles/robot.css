@@ -78,6 +78,18 @@ img {
 }
 
 .conclusion-outer-div {
-    margin-top: 3em;
-    margin-bottom: 1em;
+    width: 95%;
+}
+
+.conclusion-img-div {
+    border: 0.5em solid white;
+    border-radius: 1.5em;
+    height: 80%;
+    width: 100%;
+
+    margin-left: 1em;
+}
+
+.conclusion-img-div img {
+    border-radius: 1em;
 }
