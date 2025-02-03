@@ -2,19 +2,52 @@
 {
    width: 350px;                       
    background-color: #E5CDA0;
-   
 } 
 .TextBox{
    width: 530px;  
 }
 
-img{
+#leftPage img{
+    padding-left: 10%;
     width: 25%;
+}
+#leftPage p{
+    padding-left: 10%;
+    width: 75%;
 }
 
 #leftPage{
-    padding: 1%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+#leftPage .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: space-around;
+}
+
 #rightPage{
-    padding: 1%;
+    
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rightPage .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 10%;
+}
+
+#rightPage .video{
+    height: 43%;
+    width: 100%;
 }

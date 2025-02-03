@@ -1,4 +1,7 @@
-
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+}
 /* Add a subtle overlay to ensure content readability */
 body::before {
     content: '';
@@ -61,6 +64,7 @@ body{
 }
 
 #middle {
+    display: block;
     width: 1em;
     height: 100%;
     background-color: #964B00;
@@ -68,10 +72,13 @@ body{
 
 #leftPage {
     height: 100%;
+    width: 100%;
+
 }
 
 #rightPage {
     height: 100%;
+    width: 100%;
 }
 
 
@@ -85,6 +92,8 @@ body{
 #leftBookmarks .currentPage,
 #rightBookmarks .currentPage{
     background-color: green;
+    height: 300%;
+    z-index: 1;
 }
 
 #homeBookmark {
@@ -111,16 +120,10 @@ body{
 #bookmarks nav,
 #leftBookmarks,
 #rightBookmarks {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#leftBookmarks {
-    margin-right: 5em;
-}
 
-#rightBookmarks {
-    margin-left: 5em;
-}
 
 
 @media screen and (max-width: 1050px) {
