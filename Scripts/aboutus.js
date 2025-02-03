@@ -2,18 +2,24 @@ const aboutLeftPage = document.getElementById("leftPage");
 const aboutRightPage = document.getElementById("rightPage");
 
 const leftPagePeople = [
-    { name: "Zoé Cajelait-Asch", quote: "I love creativity and pushing boundaries!" },
-    { name: "Talia", quote: "Passionate about design and innovation." },
-    { name: "Sofia Campbell", quote: "I turn ideas into reality!" },
-    { name: "Tanner", quote: "Exploring the world, one idea at a time." },
-    { name: "Aden", quote: "Tech, art, and everything in between." },
-    { name: "Avery", quote: "Always learning, always growing!" }
+    { name: "Zoé", quote: "", role: "Club President" },
+    { name: "Talia", quote: "This is my 'head'", role: "Kiosk Co-Captain" },
+    { name: "Sofia", quote: "", role: "Kiosk Co-Captain" },
+    { name: "Tanner", quote: "", role: "Robot Captain" },
+    { name: "Aden", quote: "", role: "Video Captain" },
+    { name: "Avery", quote: "", role: "Website Captain and Programming Co-Captain" }
+    {name: "Antoniu", quote: "", role: "Programming Co-Captain"}
 ];
 
 const rightPagePeople = [
-    { name: "Vincent", quote: "Art and technology inspire me." },
-    { name: "Theo", quote: "Building the future, one step at a time." },
-    { name: "Chloe", quote: "Storytelling through visuals." }
+    {name: "Vincent", quote: "", role: "Wesbite Member" },
+    {name:"Chloe", quote: "", role: "Website Member"},
+    {name: "Theo", quote: "", role: "Website Member" },
+    {name: "Chloe", quote: "", role: "Website Member" },
+    {name: "Sam", quote: "", role: "Kiosk Member"},
+    {name:"Mohammed", quote: "", role: "Robot Member"},
+    {name: "Thomas", quote: "", role: "Robot Member"},
+    {name: "Jeff", quote: "", role: "Kiosk Member"}
 ];
 
 let leftIndex = 0;
