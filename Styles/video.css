@@ -9,7 +9,8 @@
 
 #leftPage img{
     padding-left: 10%;
-    width: 25%;
+    max-width: 60vw;
+    max-height: 35vh;
 }
 #leftPage p{
     padding-left: 10%;
@@ -45,6 +46,7 @@
     flex-wrap: wrap;
     height: 100%;
     padding: 10%;
+    justify-content: space-around;
 }
 
 #rightPage .video{
