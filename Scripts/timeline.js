@@ -61,6 +61,7 @@ const RoboTexts = [
 const KioskTexts = [
    "Time for planning! The kiosk members brainstorm how they want to incorporate jack and the beanstalk to a set of walls and a table. Lots of foliage!!",
    "Hard at work! Kiosk members are very sleepy after a long session of sanding and priming last year’s walls and furniture",
+   "Feeling medieval! With the table looking particularly woody, kiosk members move onto the bench",
    "What a landscape! Kiosk members paint a base coat of the mural before deciding to fully assemble the walls for better transitions",
    "Whoa nelly!!! That’s gonna be a tall beanstalk. Chicken wire is not a joy to work with but we will prevail"
 ]

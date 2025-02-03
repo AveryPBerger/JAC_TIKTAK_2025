@@ -8,9 +8,9 @@
 }
 
 #leftPage img{
+    overflow: hidden;
+    object-fit: cover;
     padding-left: 10%;
-    max-width: 60vw;
-    max-height: 35vh;
 }
 #leftPage p{
     padding-left: 10%;
