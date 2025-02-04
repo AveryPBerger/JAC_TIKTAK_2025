@@ -56,7 +56,9 @@ iframe{
 
 }
 
-
+.image{
+    max-width: 35vw;
+}
 
 @media screen and (max-width: 1050px)  {
     iframe{
