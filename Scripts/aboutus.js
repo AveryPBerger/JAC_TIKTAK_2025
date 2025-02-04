@@ -9,7 +9,7 @@ const leftPagePeople = [
 
 
     {name:"Chloe", quote: "", role: "Website Member"},
-    {name: "Vincent", quote: "", role: "Wesbite Member"},
+    {name: "Vincent", quote: "", role: "Website Member"},
 
     {name: "Jeff", quote: "", role: "Kiosk Member"},
     {name: "Cos", quote:"", role:"Kiosk Member"},
