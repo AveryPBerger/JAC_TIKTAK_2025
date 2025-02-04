@@ -3,7 +3,7 @@ const aboutRightPage = document.getElementById("rightPage");
 
 const leftPagePeople = [
     { name: "Zoé", quote: "", role: "Président" },
-    { name: "Talia", quote: "Ceci est mon 'head shot'", role: "Co-Capitaine du Kiosque" },
+    { name: "Talia", quote: "", role: "Co-Capitaine du Kiosque" },
     { name: "Avery", quote: "", role: "Capitaine du site web et Co-Captain du programmation" },
     {name: "Antoniu", quote: "", role: "Capitaine du programmation"},
 
@@ -11,9 +11,7 @@ const leftPagePeople = [
     {name:"Chloe", quote: "", role: "Membre du site-web"},
     {name: "Vincent", quote: "", role: "Membre du site-web"},
 
-    {name: "Jeff", quote: "Lundiiii :(", role: "Membre du Kiosque"},
-    {name: "Sara", quote: "", role: "Membre du Kiosque"},
-    {name: "Olivia C", quote:"", role:"Membre du Kiosque"},
+    {name: "Jeff", quote: "", role: "Membre du Kiosque"},
     {name: "Cos", quote:"", role:"Membre du Kiosque"},
 
     {name:"Patrick", quote:"", role: "Membre du Robo"},
@@ -22,7 +20,7 @@ const leftPagePeople = [
 ];
 
 const rightPagePeople = [
-    { name: "Tanner", quote: "Fusion est difficile", role: "Capitaine du Robo" },
+    { name: "Tanner", quote: "", role: "Capitaine du Robo" },
     { name: "Sofia", quote: "", role: "Co-Capitaine du Kiosque" },
     { name: "Aden", quote: "", role: "Capitaine du Vidéo" },
     {name: "Leora", quote: "", role: "Créateur de livre"},
@@ -32,8 +30,6 @@ const rightPagePeople = [
     
     {name: "Sam", quote: "", role: "Membre du Kiosque"},
     {name: "Melissa", quote: "", role: "Membre du Kiosque"},
-    {name: "Olivia", quote: "", role: "Membre du Kiosque"},
-    {name: "Stephanie", quote: "", role: "Membre du Kiosque"},
 
     
     {name: "Thomas", quote: "", role: "Membre du Robo"},
