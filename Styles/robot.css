@@ -1,10 +1,7 @@
 /*===General modifications===*/
 
-body {
-    
-}
-
-p.div{
+p,
+div{
     font-size: 0.75rem;
 }
 
