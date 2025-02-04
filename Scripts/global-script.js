@@ -58,3 +58,4 @@ function showLeftPage() {
     leftPage.style.display = "flex";
     rightPage.style.display = "none";
 }
+
