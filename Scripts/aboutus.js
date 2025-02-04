@@ -3,23 +3,40 @@ const aboutRightPage = document.getElementById("rightPage");
 
 const leftPagePeople = [
     { name: "Zoé", quote: "", role: "Club President" },
-    { name: "Talia", quote: "This is my 'head'", role: "Kiosk Co-Captain" },
-    { name: "Sofia", quote: "", role: "Kiosk Co-Captain" },
-    { name: "Tanner", quote: "", role: "Robot Captain" },
-    { name: "Aden", quote: "", role: "Video Captain" },
-    { name: "Avery", quote: "", role: "Website Captain and Programming Co-Captain" }
-    {name: "Antoniu", quote: "", role: "Programming Co-Captain"}
+    { name: "Talia", quote: "This is my 'head' shot", role: "Kiosk Co-Captain" },
+    { name: "Avery", quote: "", role: "Website Captain and Programming Co-Captain" },
+    {name: "Antoniu", quote: "", role: "Programming Captain"},
+
+
+    {name:"Chloe", quote: "", role: "Website Member"},
+    {name: "Vincent", quote: "", role: "Wesbite Member"},
+
+    {name: "Jeff", quote: "Mondayyyys :(", role: "Kiosk Member"},
+    {name: "Sara", quote: "", role: "Kiosk Member"},
+    {name: "Olivia C", quote:"", role:"Kiosk Member"},
+    {name: "Cos", quote:"", role:"Kiosk Member"},
+    {name:"Patrick", quote:"", role: "Robot Member"},
+    {name:"Mohammed", quote: "", role: "Robot Member"}
+
 ];
 
 const rightPagePeople = [
-    {name: "Vincent", quote: "", role: "Wesbite Member" },
-    {name:"Chloe", quote: "", role: "Website Member"},
+    { name: "Tanner", quote: "Frick Fusion", role: "Robot Captain" },
+    { name: "Sofia", quote: "", role: "Kiosk Co-Captain" },
+    { name: "Aden", quote: "", role: "Video Captain" },
+    {name: "Leora", quote: "", role: "Book Maker"},
+
     {name: "Theo", quote: "", role: "Website Member" },
-    {name: "Chloe", quote: "", role: "Website Member" },
+    {name: "Pattie", quote: "", role: "Website Member" },
+    
     {name: "Sam", quote: "", role: "Kiosk Member"},
-    {name:"Mohammed", quote: "", role: "Robot Member"},
+    {name: "Melissa", quote: "", role: "Kiosk Member"},
+    {name: "Olivia", quote: "", role: "Kiosk Member"},
+    {name: "Stephanie", quote: "", role: "Kiosk Member"},
+
+    
     {name: "Thomas", quote: "", role: "Robot Member"},
-    {name: "Jeff", quote: "", role: "Kiosk Member"}
+    {name: "Lucas", quote: "", role: "Robot Member"}
 ];
 
 let leftIndex = 0;
@@ -52,31 +69,31 @@ document.addEventListener("wheel", (event) => {
 });
 
 function loadNewPeople() {
-    createLeftPage(leftPagePeople[leftIndex].name, leftPagePeople[leftIndex].quote);
-    createRightPage(rightPagePeople[rightIndex].name, rightPagePeople[rightIndex].quote);
+    createLeftPage(leftPagePeople[leftIndex].name, leftPagePeople[leftIndex].quote,leftPagePeople[leftIndex].role);
+    createRightPage(rightPagePeople[rightIndex].name, rightPagePeople[rightIndex].quote,rightPagePeople[rightIndex].role);
 }
 
-function createLeftPage(name, quote) {
+function createLeftPage(name, quote,role) {
     aboutLeftPage.innerHTML = `
         <section class="header">
             <h2 class="name">${name}</h2>
-            <h1 class="role">Creative Team</h1>
+            <h1 class="role">${role}</h1>
         </section>
         <section class="content">
-            <img class="headshot" src="../Assets/HeadShots/${name}.jpeg" alt="${name}" loading="lazy"/>
+            <img class="headshot" src="../Assets/HeadShots/${name}.jpg" alt="${name}" loading="lazy"/>
             <p class="quote">${quote}</p>
         </section>
     `;
 }
 
-function createRightPage(name, quote) {
+function createRightPage(name, quote,role) {
     aboutRightPage.innerHTML = `
         <section class="header">
             <h2 class="name">${name}</h2>
-            <h1 class="role">Creative Team</h1>
+             <h1 class="role">${role}</h1>
         </section>
         <section class="content">
-            <img  class="headshot" src="../Assets/HeadShots/${name}.jpeg" alt="${name}" loading="lazy"/>
+            <img  class="headshot" src="../Assets/HeadShots/${name}.jpg" alt="${name}" loading="lazy"/>
             <p class="quote">${quote}</p>
         </section>
     `;

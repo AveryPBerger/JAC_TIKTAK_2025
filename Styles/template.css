@@ -1,8 +1,7 @@
 html,body{
     height: 100%;
     overflow-y: hidden;
-    font-size: 0.75rem;
-
+    
 }
 /* Add a subtle overlay to ensure content readability */
 body::before {

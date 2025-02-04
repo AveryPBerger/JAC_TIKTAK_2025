@@ -17,6 +17,10 @@
     width: 75%;
 }
 
+iframe{
+    width: 25vw;
+    height: 40vh;
+}
 #leftPage{
     height: 100%;
     margin-left: auto;
@@ -46,10 +50,26 @@
     flex-wrap: wrap;
     height: 100%;
     padding: 10%;
+    padding-top: 1%;
     justify-content: space-around;
+    align-items: center;
+
 }
 
-#rightPage .video{
-    height: 43%;
-    width: 100%;
+
+
+@media screen and (max-width: 1050px)  {
+    iframe{
+       height: 40vh;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    #rightPage .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 10%;
+        justify-content: space-around;
+    }
 }
