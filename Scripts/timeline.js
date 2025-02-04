@@ -13,10 +13,7 @@ const RobotImgs = [ "../Assets/Images/sauteringXT60.jpg",
     "../Assets/Images/sauteringXT60.jpg",
     "../Assets/Images/sauteringXT60.jpg",
     "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg",
+    "../Assets/Images/sauteringXT60.jpg"
 ]
 
 const KioskImgs = [
@@ -48,14 +45,11 @@ const AllTexts = [
 
 
 const RoboTexts = [
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
-    "So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his.",
+    "After receiving the rules, brainstorming possible solutions to the game’s challenges is extremely important, as it provides the framework of the robot’s design.",
+    "Then, we must make sketches and drawings to be capable of visualizing the components while creating a coherent structure",
+    "Once a design is finalized, we create a chassis and attach basic electronics, ensuring the drivetrain is functional.",
+    "While the drivetrain is being built and tested, small groups start creating the different aspects of the robot, including the gripper and the lift.",
+    "Once all components are attached, the robot is fine-tuned through rigorous testing with game pieces."
 ]
 
 const KioskTexts = [

@@ -14,22 +14,27 @@
 .ImageTextCombo
 {
     display: flex;
-    width: 25rem;
+    width: 35vw;
     max-height: 25%;
     padding: 5%;
     border: 0.5rem;
     border-radius: 5%;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(255, 224, 158);
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .ImageTextCombo img{
-    max-height: 15rem;
-    max-width: 22rem;
+    height: 20vh;
     padding: 2%;
 }
 
 .ImageTextCombo p{
     margin: 0%;
+    max-width: 50%;
     width: fit-content;
 }
 
