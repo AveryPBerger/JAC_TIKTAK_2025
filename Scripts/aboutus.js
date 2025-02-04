@@ -3,7 +3,7 @@ const aboutRightPage = document.getElementById("rightPage");
 
 const leftPagePeople = [
     { name: "Zoé", quote: "", role: "President" },
-    { name: "Talia", quote: "This is my 'head' shot", role: "Kiosk Co-Captain" },
+    { name: "Talia", quote: "", role: "Kiosk Co-Captain" },
     { name: "Avery", quote: "", role: "Website Captain and Programming Co-Captain" },
     {name: "Antoniu", quote: "", role: "Programming Captain"},
 
@@ -11,9 +11,7 @@ const leftPagePeople = [
     {name:"Chloe", quote: "", role: "Website Member"},
     {name: "Vincent", quote: "", role: "Wesbite Member"},
 
-    {name: "Jeff", quote: "Mondayyyys :(", role: "Kiosk Member"},
-    {name: "Sara", quote: "", role: "Kiosk Member"},
-    {name: "Olivia C", quote:"", role:"Kiosk Member"},
+    {name: "Jeff", quote: "", role: "Kiosk Member"},
     {name: "Cos", quote:"", role:"Kiosk Member"},
     {name:"Patrick", quote:"", role: "Robot Member"},
     {name:"Mohammed", quote: "", role: "Robot Member"}
@@ -21,7 +19,7 @@ const leftPagePeople = [
 ];
 
 const rightPagePeople = [
-    { name: "Tanner", quote: "Fusion is hard", role: "Robot Captain" },
+    { name: "Tanner", quote: "", role: "Robot Captain" },
     { name: "Sofia", quote: "", role: "Kiosk Co-Captain" },
     { name: "Aden", quote: "", role: "Video Captain" },
     {name: "Leora", quote: "", role: "Book Maker"},
@@ -31,8 +29,6 @@ const rightPagePeople = [
     
     {name: "Sam", quote: "", role: "Kiosk Member"},
     {name: "Melissa", quote: "", role: "Kiosk Member"},
-    {name: "Olivia", quote: "", role: "Kiosk Member"},
-    {name: "Stephanie", quote: "", role: "Kiosk Member"},
 
     
     {name: "Thomas", quote: "", role: "Robot Member"},
