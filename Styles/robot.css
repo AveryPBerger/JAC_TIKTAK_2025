@@ -20,6 +20,15 @@ img {
     height: 100%;
 }
 
+.first-entry,
+.rules-inner-container,
+.second-entry,
+.third-entry {
+    background-color: white;
+    padding: 2%;
+    border-radius: 10%;
+}
+
 /*===Left side===*/
 
 #leftPage,
@@ -42,6 +51,10 @@ img {
     grid-template-columns: 0.3fr 0.7fr;
     gap: 1em;
 
+    width: 95%;
+}
+
+.first-entry {
     width: 95%;
 }
 
@@ -68,6 +81,8 @@ img {
 }
 
 .rules-inner-container {
+    flex-direction: column;
+
     width: 75%;
 
     margin: 0;
@@ -77,17 +92,15 @@ img {
 
 /*===Right side===*/
 
-.second-entry{
-    background-color: white;
-    padding: 2%;
-    border-radius: 10%;
-}
-
 .second-entry-outer-div,
 .conclusion-outer-div {
     width: 90%;
 
     margin-top: 1em;
+}
+
+.second-entry-outer-div {
+    margin-bottom: 5%;
 }
 
 .progress-imgs-outer-div {
@@ -104,6 +117,11 @@ img {
 }
 
 .conclusion-outer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5%;
     margin-top: 2em;
 
     width: 90%;
