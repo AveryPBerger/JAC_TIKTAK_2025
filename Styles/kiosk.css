@@ -19,8 +19,8 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
-    width:50%;
 }
 
 .images-container{
@@ -43,8 +43,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    width:50%;
+    width: 100%;
 }
 
 .top-right{

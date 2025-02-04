@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Assets/bean.jpg" />
     <title>Timeline</title>
-    <!-- <link rel="stylesheet" href="../Styles/timeline.css"> -->
     <link rel="stylesheet" href="../Styles/timeline.css" />
     <link rel="stylesheet" href="../Styles/globalStyle.css" />
     <link rel="stylesheet" href="../Styles/template.css" />
@@ -21,16 +21,15 @@
         </div>
         <div id="restOfBook" class="centered-flex">
             <div id="bookmarks">
-                <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
                 <nav class="centered-flex">
                     <section id="leftBookmarks" class="centered-flex">
                         <a href="./kiosk.html">Kiosk</a>
                         <a href="./robot.html">Robot</a>
                         <a href="./video.html">Video</a>
-                        <a href="./tutorial.html">Tutorial</a>
+
                     </section>
                     <section id="rightBookmarks" class="centered-flex">
-                        <a href="./harp.html">Harp</a>
+                        <a href="./tutorial.html">Tutorial</a>
                         <a class="currentPage" href="./timeline.html">Timeline</a>
                         <a href="./aboutus.html">About Us</a>
                     </section>
@@ -44,7 +43,7 @@
                     <article class="ImageTextCombo">
                         <p>Important text here that spans multiple lines so that it looks really good mhm yah you
                             totally believe me and I really hope that this ramble</p>
-                        <img src="../Assets/Images/GroupEvilGrin.png" alt="GroupEvilGrin">
+                        <img src="../Assets/Images/GroupEvilGrin.HEIC" alt="GroupEvilGrin" loading="lazy">
                     </article>
                     <section class="legend">
                         <h4>Legend</h4>
@@ -54,14 +53,11 @@
                             <li onclick="Robot()"><span class="dot">&nbsp</span>Robot</li>
                             <li onclick="Kiosk()"><span class="dot">&nbsp</span>Kiosk</li>
                             <li onclick="RemoveContent()"><span class="dot">&nbsp</span>Video</li>
-                            <li onclick="RemoveContent()"><span class="dot">&nbsp</span>Website</li>
-                            <li onclick="RemoveContent()"><span class="dot">&nbsp</span>Harp</li>
                         </ul>
                     </section>
 
                 </section>
                 <section id="middle" class="centered-flex">
-                    <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
                 </section>
                 <section id="rightPage">
                     <section id="leftContent">
@@ -70,7 +66,8 @@
                     </section>
 
 
-                    <img id="cobbleRoad" src="../Assets/Images/Timeline/cobble stone.svg" alt="cobbleRoad">
+                    <img id="cobbleRoad" src="../Assets/Images/Timeline/cobble stone.svg" alt="cobbleRoad"
+                        loading="lazy">
                 </section>
             </section>
         </div>

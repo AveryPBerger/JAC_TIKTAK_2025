@@ -1,7 +1,7 @@
 /*===General modifications===*/
 
 body {
-    overflow: hidden;
+    font-size: 0.75rem;
 }
 
 h1,
@@ -72,6 +72,12 @@ img {
 }
 
 /*===Right side===*/
+
+.second-entry{
+    background-color: white;
+    padding: 2%;
+    border-radius: 10%;
+}
 
 .second-entry-outer-div,
 .conclusion-outer-div {

@@ -4,24 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template</title>
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <!--Stylesheets-->
-  <link rel="stylesheet" href="../Styles/globalStyle.css" />
-  <link rel="stylesheet" href="../Styles/template.css" />
-  <script src="../Scripts/global-script.js" defer></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Assets/bean.jpg" />
+    <title>Tutorial</title>
 
-</head>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../Styles/globalStyle.css" />
+    <link rel="stylesheet" href="../Styles/template.css" />
+    <link rel="stylesheet" href="../Styles/video.css" />
+    <script src="../Scripts/global-script.js" defer></script>
 
-<!--
-NOTES:
-When using this template please keep a few things in mind, if you need to change an ID or a class name for whatever reason
-push to github first and let Avery know. 
-The html section will need to be copy pasted for every page but the css will 
-be shared
-The images are templates and will need to be changed 
-elements will need to be added according to what you need for the specific page
--->
+
+  </head>
 
 <body class="centered-flex">
   <div id="fullBook">
@@ -30,16 +29,14 @@ elements will need to be added according to what you need for the specific page
     </div>
     <div id="restOfBook" class="centered-flex">
       <div id="bookmarks">
-        <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
         <nav class="centered-flex">
           <section id="leftBookmarks" class="centered-flex">
             <a href="./kiosk.html">Kiosk</a>
             <a href="./robot.html">Robot</a>
             <a href="./video.html">Video</a>
-            <a class="currentPage" href="./tutorial.html">Tutorial</a>
           </section>
           <section id="rightBookmarks" class="centered-flex">
-            <a href="./harp.html">Harp</a>
+            <a class="currentPage" href="./tutorial.html">Tutorial</a>
             <a href="./timeline.html">Timeline</a>
             <a href="./aboutus.html">About Us</a>
           </section>
@@ -47,20 +44,29 @@ elements will need to be added according to what you need for the specific page
       </div>
       <section id="book" class="centered-flex">
         <section id="leftPage">
-          <header>
-            <h2>Title</h2>
-          </header>
-          <p>
-            Text paragraph blah blah
-          </p>
-          <img src="../Assets/Images/download.jpg">
+          <section class="content">
+            <h2>Tutorial</h2>
+            <img class="image" alt="TutorialImage" src="../Assets/Images/Video/2024_video_brickwall280x210.jpg"
+              loading="lazy">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus officiis nostrum
+              exercitationem, aut maxime ut veritatis! Incidunt, rerum labore dolores quaerat culpa, odio
+              ut
+              tempore a fuga quos autem.</p>
+          </section>
+
         </section>
         <section id="middle" class="centered-flex">
-          <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
         </section>
         <section id="rightPage">
           <section class="content">
-            <p>Blah blah</p>
+
+            <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" alt="Tutorial Video">
+            </iframe>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis repellendus
+              excepturi aperiam, dolores commodi, suscipit beatae itaque tenetur perspiciatis consequatur
+              assumenda vel quasi? Temporibus nisi provident quos quaerat alias?
+            </p>
           </section>
         </section>
       </section>

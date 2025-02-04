@@ -10,7 +10,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Template</title>
+        <link rel="icon" href="../Assets/bean.jpg" />
+        <title>Video</title>
 
         <!--Stylesheets-->
         <link rel="stylesheet" href="../Styles/globalStyle.css" />
@@ -20,16 +21,6 @@
 
     </head>
 
-    <!--
-NOTES:
-When using this template please keep a few things in mind, if you need to change an ID or a class name for whatever reason
-push to github first and let Avery know. 
-The html section will need to be copy pasted for every page but the css will 
-be shared
-The images are templates and will need to be changed 
-elements will need to be added according to what you need for the specific page
--->
-
 <body class="centered-flex">
     <div id="fullBook">
         <div id="homeBookmark" class="centered-flex">
@@ -37,16 +28,14 @@ elements will need to be added according to what you need for the specific page
         </div>
         <div id="restOfBook" class="centered-flex">
             <div id="bookmarks">
-                <!--The bookmarks to the other pages, order needs to be decided and then kept consistent-->
                 <nav class="centered-flex">
                     <section id="leftBookmarks" class="centered-flex">
                         <a href="./kiosk.html">Kiosk</a>
                         <a href="./robot.html">Robot</a>
                         <a class="currentPage" href="./video.html">Video</a>
-                        <a href="./tutorial.html">Tutorial</a>
                     </section>
                     <section id="rightBookmarks" class="centered-flex">
-                        <a href="./harp.html">Harp</a>
+                        <a href="./tutorial.html">Tutorial</a>
                         <a href="./timeline.html">Timeline</a>
                         <a href="./aboutus.html">About Us</a>
                     </section>
@@ -54,72 +43,29 @@ elements will need to be added according to what you need for the specific page
             </div>
             <section id="book" class="centered-flex">
                 <section id="leftPage">
-
-                    <header>
+                    <section class="content">
                         <h2>Video</h2>
-                    </header>
-                    <video width="640" height="360" controls>
-                        <source src="../Assets/Videos/JAC RoboticsR2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <section class="VideoDescription">
-                        <p>
-                            Video Description
-                        </p>
-                    </section>
-
-
-                    <section class="Avery">
-                        <figure>
-
-                        </figure>
-                    </section>
-
-                    <section class="JustJeff">
-                        <figure>
-
-                        </figure>
-                        <!--
-                        in the section class Avery and Just Jeff there used to be:
-                        <img src="image/2024_video_avery1280x373.jpg"> (Avery)
-                        <img src="image/2024_video_justJeff280x210.jpg">(Jeff)
-                        <img src="image/2024_video_brickwall280x210.jpg">(Jeff)
-
-                        
-                        -->
-                        <img src="../Assets/Images/lostInClouds.jpg" alt="micheal">
-
-                        <section class="Avery">
-                        </section>
+                        <img class="image" alt="Video Image"
+                            src="../Assets/Images/Video/2024_video_brickwall280x210.jpg" loading="lazy">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus officiis nostrum
+                            exercitationem, aut maxime ut veritatis! Incidunt, rerum labore dolores quaerat culpa, odio
+                            ut
+                            tempore a fuga quos autem.</p>
                     </section>
 
                 </section>
                 <section id="middle" class="centered-flex">
-                    <!--Leave this relatively blank, it is used to create the space in the middle of the pages-->
                 </section>
                 <section id="rightPage">
                     <section class="content">
 
-
-                        <img src="../Assets/Images/sauteringXT60.jpg" alt="bob">
-                        <section class="TextBox">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                mollit anim id est laborum.
-                            </p>
-                        </section>
-                        <section class="VideoDescription">
-                            <h2>
-
-                                Saying/Mantra -Author
-
-                            </h2>
-                        </section>
-
+                        <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" alt="Video">
+                        </iframe>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis repellendus
+                            excepturi aperiam, dolores commodi, suscipit beatae itaque tenetur perspiciatis consequatur
+                            assumenda vel quasi? Temporibus nisi provident quos quaerat alias?
+                        </p>
                     </section>
                 </section>
             </section>

@@ -12,10 +12,12 @@
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-size: 1rem;
 }
 .logo{
     height: 60%;
     margin-top: 5%;
+    max-width: 77vw;
 }
 .written_by{
     align-self: center;
@@ -40,4 +42,10 @@
     list-style-type: none;
     list-style-position: outside;
     margin-left: -25%;
+    font-size: 2rem;
+}
+
+#rightPage .content ul li a{
+    text-decoration: none;
+    color: black;
 }

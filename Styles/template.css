@@ -1,4 +1,9 @@
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+    font-size: 0.75rem;
 
+}
 /* Add a subtle overlay to ensure content readability */
 body::before {
     content: '';
@@ -7,11 +12,10 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.3); /* Slight white overlay */
+    background-color: rgba(255, 255, 255, 0.3); 
     z-index: 0;
 }
 
-/* Ensure main content stays above the overlay */
 #fullBook {
     position: relative;
     z-index: 1;
@@ -21,21 +25,17 @@ body{
     align-items: center;
     justify-content: center;
     
-    /* Improve background image implementation */
     background-image: url("../Assets/Images/Illustration_sans_titre.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-    /* Ensure the background stays fixed while scrolling */
     background-attachment: fixed;
     
-    /* Maintain the existing flexbox layout */
     display: flex;
     align-items: center;
     justify-content: center;
     
-    /* Prevent white edges when content moves */
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -61,6 +61,7 @@ body{
 }
 
 #middle {
+    display: block;
     width: 1em;
     height: 100%;
     background-color: #964B00;
@@ -68,10 +69,13 @@ body{
 
 #leftPage {
     height: 100%;
+    width: 100%;
+
 }
 
 #rightPage {
     height: 100%;
+    width: 100%;
 }
 
 
@@ -85,6 +89,8 @@ body{
 #leftBookmarks .currentPage,
 #rightBookmarks .currentPage{
     background-color: green;
+    height: 300%;
+    z-index: 1;
 }
 
 #homeBookmark {
@@ -108,19 +114,16 @@ body{
     width: 100%;
 }
 
+#bookmarks a, #homeBookmark{
+    padding: 0.5%;
+}
 #bookmarks nav,
 #leftBookmarks,
 #rightBookmarks {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#leftBookmarks {
-    margin-right: 5em;
-}
 
-#rightBookmarks {
-    margin-left: 5em;
-}
 
 
 @media screen and (max-width: 1050px) {
