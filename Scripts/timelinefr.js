@@ -8,30 +8,19 @@ const right = document.getElementById("rightContent");
 
 const AllImgs = ["../Assets/Images/Timeline/firstDay.jpg","../Assets/Images/Timeline/ThemeDay.jpg","../Assets/Images/Timeline/Shopping.jpg","../Assets/Images/Timeline/WinterBreak.JPEG"]
 
-const RobotImgs = [ "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg",
-    "../Assets/Images/sauteringXT60.jpg"
+const RobotImgs = [ "../Assets/Images/Timeline/roboBrainstorm.jpeg",
+    "../Assets/Images/Timeline/design.png",
+    "../Assets/Images/Timeline/robo.png",
+    "../Assets/Images/Timeline/armyRobo.png"
 ]
 
 const KioskImgs = [
-    "../Assets/Images/lostInClouds.jpg",
-    "../Assets/Images/lostInClouds.jpg",
-    "../Assets/Images/lostInClouds.jpg",
-    "../Assets/Images/lostInClouds.jpg",
-    "../Assets/Images/lostInClouds.jpg",
-    "../Assets/Images/lostInClouds.jpg",
-    "../Assets/Images/lostInClouds.jpg",
-    "../Assets/Images/lostInClouds.jpg",
-]
-
-const VideoImgs = [
-
-]
-
-const HarpImgs = [
-
+    "../Assets/Images/Timeline/Brainstorm.jpg",
+    "../Assets/Images/Timeline/hardAtWork.jpg",
+    "../Assets/Images/Timeline/landscape.jpg",
+    "../Assets/Images/Timeline/medieval",
+    "../Assets/Images/Timeline/tallBeanstalk.jpeg"
+ 
 ]
 
 const AllTexts = [
@@ -59,13 +48,6 @@ const KioskTexts = [
    "Wow!!! Ça va être un grand haricot magique. La broche à poule n'est pas facile à travailler, mais nous y arriverons."
 ]
 
-const videoTexts = [
-
-]
-
-const harpTexts = [
-    
-]
 
 document.addEventListener("DOMContentLoaded", ()=>{
     AddLegendColous();
