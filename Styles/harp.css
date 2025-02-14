@@ -1,7 +1,9 @@
   body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #87CEEB; /* Light blue sky */
+    background-image: url(./../Assets/Images/harp/cloudBackground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .scrapbook {
@@ -11,17 +13,17 @@
   }
   
   .page {
-    background: #f9e7b6; /* Light tan paper background */
+    background-image: url(./../Assets/Images/bookBackground.webp);
     width: 450px;
     margin: 0px;
-    border: 5px solid #ca813a; /* Binding edge */
+    border: 5px solid #6f461d; /* Binding edge */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     padding: 15px;
     position: relative;
   }
   
   .page:first-child {
-    margin-right: 30px; /* Gap for binding */
+    border-right: 3em;
   }
   
   .title {
@@ -50,6 +52,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .polaroidPicture{
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
+    z-index: 1;
+  }
+
   .postItPicture{
     width: 250px;
   }
@@ -58,12 +67,21 @@
     width: 30px;
     height: 30px;
   }
-  
-  .note {
-    background: #ffe94c;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
+
+  .taken-picture{
+    width: 12.1em;
+  }
+
+  .post-it{
+    background-image: url(../Assets/Images/harp/postIt.png);
+  }
+
+  .picture-frame{
+    position: relative;
+  }
+
+  .ontop{
+    z-index:1;
   }
   
   .image-grid {
